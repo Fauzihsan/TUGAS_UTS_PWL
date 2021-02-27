@@ -1,7 +1,109 @@
 body{
-    background-color: rgba(66, 4, 53, 0.9);
+    background-color: #212529;
 }
 
 #containerMain{
     margin-top: 1%;
+}
+
+/* STYLE BACK TO TOP BUTTON */
+
+#bt {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+
+#bt a {
+    width: 64px;
+    display: block;
+    text-align: center;
+    font: 11px/100% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #bbb;    
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#bt span {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-bottom: 7px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 20px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    opacity: .4;
+}
+#bt a:hover span {
+    opacity: 1;
+}
+
+/* STYLE NAVBAR */
+
+.navbar{
+    padding: 0px 5px;
+}
+
+.nav-item{
+    margin: 0px 5px;
+}
+
+.nav-item a{
+    font-size: 18px;
+    text-shadow: 2px 2px 1px black;
+}
+
+.bg-dark{
+    background-color: rgba(0, 0, 0, 0) !important; 
+}
+
+.bg-nonTransparent{
+    background-color: rgb(49, 18, 48);
+}
+
+/* STYLE CAROUSEL */
+
+#mySlide{
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.carousel-item{
+    height: 100vh;
+}
+
+/* CONTENT */
+
+#beranda{
+    height: 100vh;
+    background-image: url(/florist/img/matahari2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#bungaPapan{
+    height: 400px;
+    background-color: sandybrown;
+}
+
+#bouquet{
+    height: 400px;
+    background-color: red;
+}
+#bungaHias{
+    height: 400px;
+    background-color: blue;
+}
+#order{
+    height: 400px;
+    background-color: greenyellow;
+}
+#aboutUs{
+    height: 400px;
+    background-color: aquamarine;
 }
