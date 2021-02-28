@@ -20,11 +20,17 @@ $(function () {
 //NAVBAR
 
 $(document).scroll(function () {
-    if ($(this).scrollTop() > 550) {
+    var wScroll = $(this).scrollTop();
+    //UBAH NAVBAR
+    if ($(this).scrollTop() > 50) {
         $('#navbar').removeClass('bg-dark').addClass('bg-nonTransparent');
-        console.log(this);
     }
-    else if ($(this).scrollTop() <= 550) {
+    else if ($(this).scrollTop() <= 50) {
         $('#navbar').removeClass('bg-nonTransparent').addClass('bg-dark');
+    }
+
+    //LANDING ELEMENT BERANDA
+    if (wScroll >= 0) {
+        $('#contentBeranda').addClass('show');
     }
 });
