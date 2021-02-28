@@ -1,5 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color: #212529;
+    /* background-color: #212529; */
+    background-color: whitesmoke;
 }
 
 #containerMain{
@@ -12,6 +17,7 @@ body{
     position: fixed;
     bottom: 20px;
     right: 10px;
+    z-index: 99999;
 }
 
 #bt a {
@@ -63,47 +69,84 @@ body{
 }
 
 .bg-nonTransparent{
-    background-color: rgb(49, 18, 48);
+    /* background-color: rgb(49, 18, 48); */
+    background: linear-gradient(to right,rgb(49, 18, 48),rgb(63, 25, 62),rgb(75, 7, 58));
+}
+
+/* STYLE BUTTON */
+
+.btn-primary{
+    background-color: rgb(63, 25, 62);
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 50px;
+}
+
+.btn-primary:hover{
+    background-color: rgb(39, 13, 38);
 }
 
 /* STYLE CAROUSEL */
 
 #mySlide{
-    height: 100vh;
+    /* height: 100vh; */
     background-attachment: fixed;
 }
 
-.carousel-item{
+.carousel-item img{
     height: 100vh;
 }
 
 /* CONTENT */
-
 #beranda{
     height: 100vh;
-    background-image: url(/florist/img/matahari2.jpeg);
+    background-image: url(/florist/img/mawarMerah.jpeg);
     background-size: cover;
     background-attachment: fixed;
+    padding: 200px 0px;
+}
+
+#contentBeranda{
+    color: white;
+    font-size: 24px;
+    /* background-color: rgba(0, 0, 0, .5); */
+    border-radius: 20px;
+    padding: 50px 0px;
+    text-shadow: 2px 3px 1px black;
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 1s;
+}
+
+#contentBeranda.show{
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 #bungaPapan{
-    height: 400px;
     background-color: sandybrown;
 }
 
+#bouquet, #bungaHias, #order, #aboutUs{
+    padding: 100px 0px;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 20px -50px;
+}
+
 #bouquet{
-    height: 400px;
-    background-color: red;
+    background-image: url(/florist/img/buket.jpg);
+    height: 100vh;
 }
+
 #bungaHias{
-    height: 400px;
-    background-color: blue;
+    background-image: url(/florist/img/mawarMerah.jpeg);
+    height: 100vh;
 }
-#order{
-    height: 400px;
-    background-color: greenyellow;
-}
-#aboutUs{
-    height: 400px;
-    background-color: aquamarine;
+
+#order, #aboutUs{
+    color: rgb(74,74,74);
 }
