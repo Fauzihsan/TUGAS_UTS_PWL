@@ -22,15 +22,15 @@ $(function () {
 $(document).scroll(function () {
     var wScroll = $(this).scrollTop();
     //UBAH NAVBAR
-    if ($(this).scrollTop() > 50) {
+    if ($(this).scrollTop() > 600) {
         $('#navbar').removeClass('bg-dark').addClass('bg-nonTransparent');
     }
-    else if ($(this).scrollTop() <= 50) {
+    else if ($(this).scrollTop() <= 600) {
         $('#navbar').removeClass('bg-nonTransparent').addClass('bg-dark');
     }
 
     //LANDING ELEMENT BERANDA
-    if (wScroll >= 0) {
+    if (wScroll >= 200) {
         $('#contentBeranda').addClass('show');
     }
 });
