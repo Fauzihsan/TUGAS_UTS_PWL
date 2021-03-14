@@ -2,9 +2,11 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    /* background-color: #212529; */
-    background-color: whitesmoke;
+.bodyMain{
+    background-image: url(/img/annie-spratt-e92dhXE8PUg-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 #containerMain{
@@ -55,11 +57,16 @@ body{
     padding: 0px 5px;
 }
 
+.navbar-brand img{
+    width: 400px;
+}
+
 .nav-item{
-    margin: 0px 5px;
+    /* margin: 0px 5px; */
 }
 
 .nav-item a{
+    padding: 10px 5px;
     font-size: 18px;
     text-shadow: 2px 2px 1px black;
 }
@@ -91,30 +98,22 @@ body{
 
 #mySlide{
     /* height: 100vh; */
-    background-attachment: fixed;
-}
-
-.carousel-item img{
-    height: 100vh;
+    /* background-attachment: fixed; */
 }
 
 /* CONTENT */
 #beranda{
-    width: 100%;
     height: 100%;
     background: url(/img/bg.jpg);
     background-size:cover;
     background-attachment: fixed;
-}
+    background-repeat: no-repeat;
 
-#beranda img{
-    color: black;
 }
 
 #contentBeranda{
     color: white;
     font-size: 24px;
-    border-radius: 20px;
     padding: 0px 0px;
     text-shadow: 2px 3px 1px black;
     opacity: 0;
@@ -125,13 +124,19 @@ body{
     bottom: -200px;
 }
 
+/* PARALAX LANDING ELEMENT */
+
 #contentBeranda.show{
     opacity: 1;
     transform: translate(0, 0);
 }
 
 #bungaPapan{
-    background-color: sandybrown;
+    /* background-color: sandybrown; */
+}
+
+.carousel-item img{
+    height: 100vh;
 }
 
 #bouquet, #bungaHias, #order, #aboutUs{
@@ -144,7 +149,7 @@ body{
 }
 
 #bouquet{
-    background-image: url(/img/buket.jpg);
+    padding: 20px 20px;
     height: 100vh;
 }
 
@@ -155,4 +160,33 @@ body{
 
 #order, #aboutUs{
     color: rgb(74,74,74);
+}
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width: 576px){
+    .bg-dark{
+        background: linear-gradient(to right,rgb(49, 18, 48),rgb(63, 25, 62),rgb(75, 7, 58));
+    }
+    .navbar-brand img{
+        width: 300px;
+    }
+    #contentBeranda{
+        top: 250px;
+        font-size: 12px;
+    }
+    .btn-primary{
+        padding: 5px 5px;
+        width: 100px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .bodyMain{
+        background-position: -200px 0px;
+    }
+
+    #scene img{
+        width: 250px;
+        margin: auto;
+    }
 }

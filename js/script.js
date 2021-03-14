@@ -29,8 +29,22 @@ $(document).scroll(function () {
         $('#navbar').removeClass('bg-nonTransparent').addClass('bg-dark');
     }
 
-    //LANDING ELEMENT BERANDA
-    if (wScroll >= 200) {
+    //LANDING ELEMENT PARALAX PADA BERANDA
+    if (window.matchMedia("(max-width: 570px)").matches && wScroll >= 20) {
         $('#contentBeranda').addClass('show');
     }
+    else {
+        if (wScroll >= 200) {
+            $('#contentBeranda').addClass('show');
+        }
+    }
 });
+
+//PARALAX PADA GAMBAR BERANDA
+$(window).scroll(function () {
+    var scrollPos = $(this).scrollTop();
+    $("#beranda").css({
+        'background-size': 100 + scrollPos + '%',
+    });
+});
+
