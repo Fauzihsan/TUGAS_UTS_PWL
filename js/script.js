@@ -19,6 +19,10 @@ $(function () {
 
 //NAVBAR
 
+$(window).on("load", function () {
+    $('#contentBeranda').addClass('show');
+})
+
 $(document).scroll(function () {
     var wScroll = $(this).scrollTop();
     //UBAH NAVBAR
@@ -27,6 +31,20 @@ $(document).scroll(function () {
     }
     else if ($(this).scrollTop() <= 600) {
         $('#navbar').removeClass('bg-nonTransparent').addClass('bg-dark');
+    }
+
+    if ($(this).scrollTop() > 600 && $(this).scrollTop() < 1500) {
+
+        $('#test').css({
+            "transform": "translate(0,0)",
+            "opacity": 1
+        })
+    }
+    else {
+        $('#test').css({
+            "transform": "translate(0,-10px)",
+            "opacity": 0
+        })
     }
 
     //LANDING ELEMENT PARALAX PADA BERANDA

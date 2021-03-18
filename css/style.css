@@ -3,10 +3,11 @@ html{
 }
 
 .bodyMain{
-    background-image: url(/img/annie-spratt-e92dhXE8PUg-unsplash.jpg);
+    background-image: url(../img/annie-spratt-e92dhXE8PUg-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
+    height: max-content;
+    padding: 3% 0px;
 }
 
 #containerMain{
@@ -18,7 +19,7 @@ html{
 #bt {
     position: fixed;
     bottom: 20px;
-    right: 10px;
+    right:20px;
     z-index: 99999;
 }
 
@@ -53,21 +54,31 @@ html{
 
 /* STYLE NAVBAR */
 
-.navbar{
-    padding: 0px 5px;
+.navbar-expand-lg .navbar-collapse{
+    margin-left: 3rem;
 }
 
-.navbar-brand img{
-    width: 400px;
+.navbar-toggler{
+    margin-left: 3rem;
+}
+.navbar-brand{
+    margin-left: 2em;
 }
 
-.nav-item{
-    /* margin: 0px 5px; */
+
+
+/* .nav-item{
+    margin-right: 3em;
+} */
+
+.navbar-nav{
+    margin-right: 3em;
 }
 
 .nav-item a{
-    padding: 10px 5px;
+    /* padding: 10px 5px; */
     font-size: 18px;
+    margin: 0px 5px;
     text-shadow: 2px 2px 1px black;
 }
 
@@ -103,25 +114,29 @@ html{
 
 /* CONTENT */
 #beranda{
-    height: 100%;
-    background: url(/img/bg.jpg);
+    background: url(../img/bg.jpg);
     background-size:cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 
 }
-
 #contentBeranda{
+    width: 100%;
     color: white;
+    padding: 0px 20px;
     font-size: 24px;
-    padding: 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
     text-shadow: 2px 3px 1px black;
+    /* margin: 0px 20px; */
+    margin-top: 70%;
     opacity: 0;
     transform: translate(0, -40px);
-    transition: 1s;
+    transition: 5s;
     position: absolute;
-    z-index: 999; 
-    bottom: -200px;
 }
 
 /* PARALAX LANDING ELEMENT */
@@ -131,55 +146,97 @@ html{
     transform: translate(0, 0);
 }
 
+
+#bouquet{
+    padding: 20px 20px;
+}
+
+/* #bouquet h1,p,ul,button{
+    transform: translate(0,-40px);
+    opacity: 0;
+} */
+
+#divBouqet{ 
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    padding: 0px 50px;
+    padding-top: 40px;
+    text-align: justify;
+    color: white;
+}
+
+#test{
+    transition: 2s;
+    opacity: 0;
+    transform: translate(0,-20px);
+}
+
+#divBouqet button{
+    margin: auto;
+}
+
+.scene img{
+    width: 500px;
+    opacity: .7;
+}
+
 #bungaPapan{
-    /* background-color: sandybrown; */
+    margin: 3% 0px;
+}
+
+#halamanCard{
+    margin-top: 3%;
+}
+
+#card{
 }
 
 .carousel-item img{
     height: 100vh;
 }
 
-#bouquet, #bungaHias, #order, #aboutUs{
+
+#bungaHias{
+    background-image: url(/img/mawarMerah.jpeg);
+    height: 100vh;
     padding: 100px 0px;
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 20px -50px;
+    margin: 3% 0px;
 }
 
-#bouquet{
-    padding: 20px 20px;
-    height: 100vh;
+#order{
+    color: white;
+    margin: 3% 0px;
 }
 
-#bungaHias{
-    background-image: url(/img/mawarMerah.jpeg);
-    height: 100vh;
-}
-
-#order, #aboutUs{
-    color: rgb(74,74,74);
+#aboutUs{
+    color: white;
+    margin-top: 3%;
 }
 
 /* MOBILE VIEW */
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 700px){
     .bg-dark{
         background: linear-gradient(to right,rgb(49, 18, 48),rgb(63, 25, 62),rgb(75, 7, 58));
     }
-    .navbar-brand img{
-        width: 300px;
-    }
+    /* .navbar-brand img{
+            margin-left: 3em;
+    } */
     #contentBeranda{
-        top: 250px;
         font-size: 12px;
+        /* padding: 0px 10px; */
     }
     .btn-primary{
         padding: 5px 5px;
         width: 100px;
-        height: 50px;
-        font-size: 14px;
+        height: 30px;
+        font-size: 12px;
     }
     .bodyMain{
         background-position: -200px 0px;
@@ -187,6 +244,16 @@ html{
 
     #scene img{
         width: 250px;
+        margin: auto;
+    }
+    /* #bungaPapan{
+        margin-top: 180px;
+    } */
+}
+
+@media only screen and (max-width:992px){
+    #scene img{
+        width: 400px;
         margin: auto;
     }
 }
