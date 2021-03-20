@@ -33,29 +33,29 @@ $(document).scroll(function () {
         $('#navbar').removeClass('bg-nonTransparent').addClass('bg-dark');
     }
 
-    if ($(this).scrollTop() > 600 && $(this).scrollTop() < 1500) {
+    // if ($(this).scrollTop() > 600 && $(this).scrollTop() < 1500) {
 
-        $('#test').css({
-            "transform": "translate(0,0)",
-            "opacity": 1
-        })
-    }
-    else {
-        $('#test').css({
-            "transform": "translate(0,-10px)",
-            "opacity": 0
-        })
-    }
+    //     $('#test').css({
+    //         "transform": "translate(0,0)",
+    //         "opacity": 1
+    //     })
+    // }
+    // else {
+    //     $('#test').css({
+    //         "transform": "translate(0,-10px)",
+    //         "opacity": 0
+    //     })
+    // }
 
     //LANDING ELEMENT PARALAX PADA BERANDA
-    if (window.matchMedia("(max-width: 570px)").matches && wScroll >= 20) {
-        $('#contentBeranda').addClass('show');
-    }
-    else {
-        if (wScroll >= 200) {
-            $('#contentBeranda').addClass('show');
-        }
-    }
+    // if (window.matchMedia("(max-width: 570px)").matches && wScroll >= 20) {
+    //     $('#contentBeranda').addClass('show');
+    // }
+    // else {
+    //     if (wScroll >= 200) {
+    //         $('#contentBeranda').addClass('show');
+    //     }
+    // }
 });
 
 //PARALAX PADA GAMBAR BERANDA
