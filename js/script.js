@@ -18,45 +18,21 @@ $(function () {
 });
 
 //NAVBAR
-
-$(window).on("load", function () {
-    $('#contentBeranda').addClass('show');
-})
-
 $(document).scroll(function () {
     var wScroll = $(this).scrollTop();
     //UBAH NAVBAR
-    if ($(this).scrollTop() > 600) {
+    if ($(this).scrollTop() > 300) {
         $('#navbar').removeClass('bg-dark').addClass('bg-nonTransparent');
     }
     else if ($(this).scrollTop() <= 600) {
         $('#navbar').removeClass('bg-nonTransparent').addClass('bg-dark');
     }
-
-    // if ($(this).scrollTop() > 600 && $(this).scrollTop() < 1500) {
-
-    //     $('#test').css({
-    //         "transform": "translate(0,0)",
-    //         "opacity": 1
-    //     })
-    // }
-    // else {
-    //     $('#test').css({
-    //         "transform": "translate(0,-10px)",
-    //         "opacity": 0
-    //     })
-    // }
-
-    //LANDING ELEMENT PARALAX PADA BERANDA
-    // if (window.matchMedia("(max-width: 570px)").matches && wScroll >= 20) {
-    //     $('#contentBeranda').addClass('show');
-    // }
-    // else {
-    //     if (wScroll >= 200) {
-    //         $('#contentBeranda').addClass('show');
-    //     }
-    // }
 });
+
+//SHOW TEXT PADA BERANDA
+$(window).on("load", function () {
+    $('#contentBeranda').addClass('show');
+})
 
 //PARALAX PADA GAMBAR BERANDA
 $(window).scroll(function () {

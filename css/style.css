@@ -1,16 +1,16 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.bodyMain{
-    background-image: url(../img/annie-spratt-e92dhXE8PUg-unsplash.jpg);
+.bodyMain {
+    /* background-image: url(../img/annie-spratt-e92dhXE8PUg-unsplash.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     height: max-content;
     padding: 3% 0px;
 }
 
-#containerMain{
+#containerMain {
     margin-top: 1%;
 }
 
@@ -19,7 +19,7 @@ html{
 #bt {
     position: fixed;
     bottom: 20px;
-    right:20px;
+    right: 20px;
     z-index: 99999;
 }
 
@@ -30,11 +30,12 @@ html{
     font: 11px/100% Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
-    color: #bbb;    
+    color: #bbb;
     -webkit-transition: 1s;
     -moz-transition: 1s;
     transition: 1s;
 }
+
 #bt span {
     width: 40px;
     height: 40px;
@@ -48,52 +49,46 @@ html{
     transition: 1s;
     opacity: .4;
 }
+
 #bt a:hover span {
     opacity: 1;
 }
 
 /* STYLE NAVBAR */
 
-.navbar-expand-lg .navbar-collapse{
+.navbar-expand-lg .navbar-collapse {
     margin-left: 3rem;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     margin-left: 3rem;
 }
-.navbar-brand{
+
+.navbar-brand {
     margin-left: 2em;
 }
 
-
-
-/* .nav-item{
-    margin-right: 3em;
-} */
-
-.navbar-nav{
+.navbar-nav {
     margin-right: 3em;
 }
 
-.nav-item a{
-    /* padding: 10px 5px; */
+.nav-item a {
     font-size: 18px;
-    margin: 0px 5px;
+    margin-right: 15px;
     text-shadow: 2px 2px 1px black;
 }
 
-.bg-dark{
-    background-color: rgba(0, 0, 0, 0) !important; 
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 
-.bg-nonTransparent{
-    /* background-color: rgb(49, 18, 48); */
-    background: linear-gradient(to right,rgb(49, 18, 48),rgb(63, 25, 62),rgb(75, 7, 58));
+.bg-nonTransparent {
+    background: linear-gradient(to right, rgb(49, 18, 48), rgb(63, 25, 62), rgb(75, 7, 58));
 }
 
 /* STYLE BUTTON */
 
-.btn-primary{
+.btn-primary {
     background-color: rgb(63, 25, 62);
     outline: none;
     border: none;
@@ -101,26 +96,24 @@ html{
     height: 50px;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: rgb(39, 13, 38);
 }
 
 /* STYLE CAROUSEL */
 
-#mySlide{
-    /* height: 100vh; */
-    /* background-attachment: fixed; */
-}
+#mySlide {}
 
 /* CONTENT */
-#beranda{
+#beranda {
     background: url(../img/bg.jpg);
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 
 }
-#contentBeranda{
+
+#contentBeranda {
     width: 100%;
     color: white;
     padding: 0px 20px;
@@ -131,7 +124,6 @@ html{
     flex-direction: row;
     justify-content: center;
     text-shadow: 2px 3px 1px black;
-    /* margin: 0px 20px; */
     margin-top: 70%;
     opacity: 0;
     transform: translate(0, -40px);
@@ -141,63 +133,129 @@ html{
 
 /* PARALAX LANDING ELEMENT */
 
-#contentBeranda.show{
+#contentBeranda.show {
     opacity: 1;
     transform: translate(0, 0);
 }
 
-
-#bouquet{
+/* CONTENT */
+#bouquet {
     padding: 20px 20px;
 }
 
-/* #bouquet h1,p,ul,button{
-    transform: translate(0,-40px);
-    opacity: 0;
-} */
-
-#divBouqet{ 
+#divBouqet {
     margin-top: 5%;
-    background-color: rgba(0, 0, 0, .5);
     border-radius: 20px;
     padding: 0px 50px;
     padding-top: 40px;
     text-align: justify;
-    color: white;
+    color: #4A4A4A;
 }
 
-#test{
-    transition: 2s;
-    opacity: 0;
-    transform: translate(0,-20px);
-}
-
-#divBouqet button{
+#divBouqet button {
     margin: auto;
 }
 
-.scene img{
+.scene img {
     width: 500px;
-    opacity: .7;
 }
 
-#bungaPapan{
+#bungaPapan {
     margin: 3% 0px;
 }
 
-#halamanCard{
+#halamanCard {
     margin-top: 3%;
 }
 
-#card{
+.card-container {
+    padding: 100px 0px;
+    -webkit-perspective: 1000;
+    perspective: 1000;
 }
 
-.carousel-item img{
+.profile-card-4 {
+    max-width: 300px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 5px 5px 25px rgb(49, 18, 48);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.profile-card-4 img {
+    transition: all 0.25s linear;
+}
+
+.profile-card-4 .profile-content {
+    position: relative;
+    padding: 15px;
+    background-color: #FFF;
+}
+
+.profile-card-4 .profile-name {
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -70px;
+    color: #FFF;
+    font-size: 17px;
+}
+
+.profile-card-4 .profile-name p {
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 3px black;
+}
+
+.profile-card-4 .profile-description {
+    color: #777;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.profile-card-4 .profile-overview {
+    padding: 15px 0px;
+}
+
+.profile-card-4 .profile-overview p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #777;
+}
+
+.profile-card-4 .profile-overview h4 {
+    color: #273751;
+    font-weight: bold;
+}
+
+.profile-card-4 .profile-content::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    top: -10px;
+    left: 0px;
+    right: 0px;
+    background-color: #4A4A4A;
+    z-index: 0;
+    transform: skewY(3deg);
+}
+
+.profile-card-4:hover img {
+    transform: rotate(5deg) scale(1.1, 1.1);
+    filter: brightness(110%);
+}
+
+.carousel-item img {
     height: 100vh;
 }
 
 
-#bungaHias{
+#bungaHias {
     background-image: url(/img/mawarMerah.jpeg);
     height: 100vh;
     padding: 100px 0px;
@@ -209,52 +267,80 @@ html{
     margin: 3% 0px;
 }
 
-#order{
+#order {
     color: #4A4A4A;
+    padding: 100px 0px;
     margin: 3% 0px;
 }
 
-#aboutUs{
+#aboutUs {
     color: #4A4A4A;
     margin-top: 3%;
     margin-bottom: 3%;
 }
 
-/* MOBILE VIEW */
+/* RESPONSIVE VIEW */
 
-@media only screen and (max-width: 700px){
-    .bg-dark{
-        background: linear-gradient(to right,rgb(49, 18, 48),rgb(63, 25, 62),rgb(75, 7, 58));
+@media only screen and (max-width: 992px) {
+    .bg-dark {
+        background: linear-gradient(to right, rgb(49, 18, 48), rgb(63, 25, 62), rgb(75, 7, 58));
     }
-    /* .navbar-brand img{
-            margin-left: 3em;
-    } */
-    #contentBeranda{
+
+    .navbar-brand img {
+        width: 250px;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        margin-left: 3rem;
+        font-size: 20px;
+    }
+
+    #contentBeranda {
         font-size: 12px;
-        /* padding: 0px 10px; */
     }
-    .btn-primary{
+
+    .btn-primary {
         padding: 5px 5px;
         width: 100px;
         height: 30px;
         font-size: 12px;
     }
-    .bodyMain{
+
+    .bodyMain {
         background-position: -200px 0px;
     }
 
-    #scene img{
+    #scene img {
         width: 250px;
         margin: auto;
     }
-    /* #bungaPapan{
-        margin-top: 180px;
-    } */
 }
 
-@media only screen and (max-width:992px){
-    #scene img{
+@media only screen and (min-width: 700px) {
+    #contentBeranda {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width:1365px) {
+    .navbar-brand img {
+        width: 280px;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        margin-left: 0rem;
+    }
+
+    .navbar-brand {
+        margin-left: 0em;
+    }
+
+    .nav-item a {
+        font-size: 16px;
+        text-shadow: 2px 2px 1px black;
+    }
+
+    #scene img {
         width: 400px;
-        margin: auto;
     }
 }
