@@ -3,7 +3,6 @@ html {
 }
 
 .bodyMain {
-    /* background-image: url(../img/annie-spratt-e92dhXE8PUg-unsplash.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     height: max-content;
@@ -97,11 +96,7 @@ html {
     background-color: rgb(39, 13, 38);
 }
 
-/* STYLE CAROUSEL */
-
-#mySlide {}
-
-/* CONTENT */
+/* CONTENT BERANDA*/
 #beranda {
     background: url(../img/bg.jpg);
     background-size: cover;
@@ -128,14 +123,14 @@ html {
     position: absolute;
 }
 
-/* PARALAX LANDING ELEMENT */
+/* PARALAX LANDING ELEMENT BERANDA*/
 
 #contentBeranda.show {
     opacity: 1;
     transform: translate(0, 0);
 }
 
-/* CONTENT */
+/* CONTENT BOUQUET */
 #bouquet {
     padding: 50px 50px;
 }
@@ -153,10 +148,6 @@ html {
 
 .scene img {
     width: 500px;
-}
-
-#bungaPapan {
-    margin: 3% 0px;
 }
 
 #halamanCard {
@@ -249,6 +240,7 @@ html {
 /* BUNGA PAPAN */
 
 #bungaPapan {
+    margin: 3% 0px;
     padding-bottom: 10px;
     background-color: #000;
 }
@@ -350,21 +342,22 @@ html {
     background-position: center;
 }
 
-/* BUNGA HIAS */
+/* CONTENT BUNGA HIAS */
 
 #bungaHias {
-    background-image: url(/img/bgHias.jpg);
+    background-image: url(../img/bgHias.jpg);
     height: 800px;
     padding: 100px 0px;
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-top: 3%;
+    background-position: 0px 80px;
+    margin-top: -50px;
     text-shadow: 3px 3px 5px black;
 }
 
-/* SLIDE BUNGA HIAS*/
+/* ANIMATION BUNGA HIAS*/
 .container-bungaHias {
     position: relative;
     width: 320px;
@@ -453,6 +446,8 @@ span {
     }
 }
 
+/* CONTENT ORDER */
+
 #order {
     color: white;
     text-shadow: 3px 3px 2px black;
@@ -464,6 +459,7 @@ span {
     background-image: url(/img/bgOrder.jpg);
 }
 
+/* CONTENT ABOUTUS */
 #aboutUs {
     color: #4A4A4A;
     margin-top: 3%;
@@ -479,6 +475,10 @@ span {
 
     .navbar-brand img {
         width: 250px;
+    }
+
+    #order {
+        background-position: center;
     }
 
     .navbar-expand-lg .navbar-collapse {
