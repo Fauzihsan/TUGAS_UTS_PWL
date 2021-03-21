@@ -10,9 +10,6 @@ html {
     padding: 3% 0px;
 }
 
-#containerMain {
-    margin-top: 1%;
-}
 
 /* STYLE BACK TO TOP BUTTON */
 
@@ -255,7 +252,7 @@ html {
 
 
 #bungaHias {
-    background-image: url(/img/bgBody.jpg);
+    background-image: url(/img/bgHias.jpg);
     height: 800px;
     padding: 100px 0px;
     color: white;
@@ -263,6 +260,7 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin-top: 3%;
+    text-shadow: 3px 3px 5px black;
 }
 
 /* SLIDE BUNGA HIAS*/
@@ -315,32 +313,32 @@ span {
 }
 
 .carousel__face:nth-child(4) {
-    background-image: url("");
+    background-image: url("../img/bungaHias4.jpg");
     transform: rotateY(120deg) translateZ(430px);
 }
 
 .carousel__face:nth-child(5) {
-    background-image: url("");
+    background-image: url("../img/bungaHias5.jpg");
     transform: rotateY(160deg) translateZ(430px);
 }
 
 .carousel__face:nth-child(6) {
-    background-image: url("");
+    background-image: url("../img/bungaHias6.jpg");
     transform: rotateY(200deg) translateZ(430px);
 }
 
 .carousel__face:nth-child(7) {
-    background-image: url("");
+    background-image: url("../img/bungaHias7.jpg");
     transform: rotateY(240deg) translateZ(430px);
 }
 
 .carousel__face:nth-child(8) {
-    background-image: url("");
+    background-image: url("../img/bungaHias8.jpg");
     transform: rotateY(280deg) translateZ(430px);
 }
 
 .carousel__face:nth-child(9) {
-    background-image: url("");
+    background-image: url("../img/bungaHias9.jpg");
     transform: rotateY(320deg) translateZ(430px);
 }
 
@@ -355,9 +353,14 @@ span {
 }
 
 #order {
-    color: #4A4A4A;
+    color: white;
+    text-shadow: 3px 3px 2px black;
+    margin-top: -50px;
+    background-attachment: fixed;
+    background-size: cover;
     padding: 100px 0px;
-    margin: 3% 0px;
+    height: 100vh;
+    background-image: url(/img/bgOrder.jpg);
 }
 
 #aboutUs {
