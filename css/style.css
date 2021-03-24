@@ -456,7 +456,7 @@ span {
     background-size: cover;
     padding: 100px 0px;
     height: 100vh;
-    background-image: url(/img/bgOrder.jpg);
+    background-image: url(../img/bgOrder.jpg);
 }
 
 /* CONTENT ABOUTUS */
